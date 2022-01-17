@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyles = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -6,7 +10,7 @@
 body {
     margin: 0;
     background: white;
-    color: hsl(192, 100%, 9%);
+    color: hsl(192,100%,9%);
     font-family: "Poppins", sans-serif;
     font-size: 1.15em;
 }
@@ -19,3 +23,4 @@ p {
 img {
     max-width: 100%;
 }
+`;
